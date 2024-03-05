@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVAK_MODULES DESENVOLVIDO POR Novakdev</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+</head>
+<!-- 
+    ALL: 
+        - NAVEGAÇÃO POR SETA DO TECLADO
+    BARBERSHOP:
+        - MUDAR MAQUIAGEM E BATOM PARA A SEGUNDA PAGINA
+    
+ -->
+<body>
+    <section class="skinshop-interface interface" style="display: none;">
+        <div class="shop-interface-top">
+
+            <div class="shop-container">
+                <div class="shop-title">
+                    <div class="shop-text">
+                        CHAPÉUS
+                    </div>
+                    <div class="shop-color-selector">
+                        <div class="shop-color-button novak-background" data-action="remove">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <div class="shop-color-selected">
+                            <img src="./assets/clothes/female/1/0.png" alt="" srcset="">
+                        </div>
+                        <div class="shop-color-button novak-background" data-action="add">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-modal novak-background novak-background-border-a">
+                    <div class="shop-categorys" style="display: none;">
+                        <div class="shop-categorys-page" page="0" style="display: none;">
+                            <div class="shop-category-page-collum template-a">
+                                <div data-idpart="chapeu" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/bone.png" alt="" srcset="">
+                                    <span>
+                                        Chapéu
+                                    </span>
+                                </div>
+                                <div data-idpart="oculos" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/oculos.png" alt="" srcset="">
+                                    <span>
+                                        Óculos
+                                    </span>
+                                </div>
+                                <div data-idpart="mochila" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/mochila.png" alt="" srcset="">
+                                    <span>
+                                        Mochila
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-category-page-collum template-b">
+                                <div data-idpart="acessorio" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/joia.png" alt="" srcset="">
+                                    <span>
+                                        Acessório
+                                    </span>
+                                </div>
+                              
+                                <div data-idpart="jaqueta" class="shop-single-category novak-background-b novak-background-border-b shop-single-category-giant">
+                                    <img src="./assets/jaqueta.png" alt="" srcset="">
+                                    <span>
+                                        Jaqueta
+                                    </span>
+                                </div>
+
+                                <div data-idpart="sapato" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/sapato.png" alt="" srcset="">
+                                    <span>
+                                        Sapatos
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-category-page-collum template-c">
+                                <div data-idpart="calca" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/calca.png" alt="" srcset="">
+                                    <span>
+                                        Calças
+                                    </span>
+                                </div>
+                                
+                                <div data-idpart="mao" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/mao.png" alt="" srcset="">
+                                    <span>
+                                        Mãos
+                                    </span>
+                                </div>
+                              
+                                
+
+                                <div data-idpart="camisa" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/camisa.png" alt="" srcset="">
+                                    <span>
+                                        Camisa
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-categorys-page" page="1">
+                            <div class="shop-category-page-collum template-d">
+
+                                <div data-idpart="mascara" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/mascara.png" alt="" srcset="">
+                                    <span>
+                                        Mascara
+                                    </span>
+                                </div>
+                                <div data-idpart="relogio" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/relogio.png" alt="" srcset="">
+                                    <span>
+                                        Relogio
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-category-page-collum template-e">
+                                <div data-idpart="bracelete" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/pulsieira.png" alt="" srcset="">
+                                    <span>
+                                        Pulseiras
+                                    </span>
+                                </div>
+
+                                <div data-idpart="colete" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/colete.png" alt="" srcset="">
+                                    <span>
+                                        Colete
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-category-page-collum template-d">
+                                
+                                <div data-idpart="adesivo" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/adesivo.png" alt="" srcset="">
+                                    <span>
+                                        Adesivos
+                                    </span>
+                                </div>
+                              
+                                
+
+                                <div data-idpart="brinco" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/brinco.png" alt="" srcset="">
+                                    <span>
+                                        Brinco
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-products">
+                        <div class="shop-products-wrapper">
+
+                            <div class="shop-product-single novak-background-b novak-background-border-b">
+                                <img src="./assets/clothes/female/1/0.png" alt="" srcset="">
+                            </div>
+
+                 
+                        </div>
+                       
+
+                    </div>
+                    <div class="shop-scroll">
+                        <input id="skinshop_category_scroll" min="0" value="0" max="1" type="range" name="" id="">
+                    </div>
+                </div>
+                <div class="shop-buttons">
+                    <div class="shop-price-button novak-background">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <p>
+                            <span></span>
+                            <span class="skinshop-price-text">50,00</span>
+                        </p>
+                    </div>
+                    <div class="cam-container">
+                        <div class="cam-button novak-background" data-mode="rem">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <div class="cam-selected novak-background">
+                            <img src="./assets/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="cam-button novak-background" data-mode="add">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="return-button novak-background">
+                        <span class="material-symbols-outlined">
+                            undo
+                        </span>
+                        <p>VOLTAR</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="shop-interface-bottom">
+            <div class="shop-container">
+                <div class="shop-rotation-icon">
+                    <span class="material-symbols-outlined">
+                        360
+                    </span>
+                </div>
+                <div class="shop-rotation-infos">
+                    <span>
+                        ROTAÇÃO DO PERSONAGEM
+                    </span>
+                    <input class="rotate-input" min="0" max="360" type="range" name="" id="">
+                </div>
+                <div class="shop-rotation-icon">
+                    <span class="material-symbols-outlined">
+                        360
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="barbershop-interface interface" style="display: none;">
+        <div class="shop-interface-top">
+
+            <div class="shop-container">
+                <div class="shop-title">
+                    <div class="shop-text">
+                        CHAPÉUS
+                    </div>
+                    <div class="shop-color-selector">
+                        <div class="shop-color-button novak-background" data-action="remove">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <div class="shop-color-selected">
+                            <img src="./assets/CabeloMechas.png" alt="" srcset="">
+                        </div>
+                        <div class="shop-color-button novak-background" data-action="add">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                    <div class="shop-color-selector">
+                        <div class="shop-color-button novak-background" data-mode="primary" data-action="remove">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <div class="shop-color-selected">
+                            <img src="./assets/CabeloCor.png" alt="" srcset="">
+                        </div>
+                        <div class="shop-color-button novak-background" data-mode="primary" data-action="add">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-modal novak-background novak-background-border-a">
+                    <div class="shop-categorys" style="display: none;">
+                        <div class="shop-categorys-page" page="0" style="display: none;">
+                            <div class="shop-category-page-collum template-a">
+
+                                <div data-idpart="cabelo" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Cabelo.png" alt="" srcset="">
+                                    <span>
+                                        Cabelo
+                                    </span>
+                                </div>
+
+                                <div data-idpart="barba" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Barba.png" alt="" srcset="">
+                                    <span>
+                                        Barba
+                                    </span>
+                                </div>
+
+                                <div data-idpart="cabelopeito" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/TatooPeito.png" alt="" srcset="">
+                                    <span>
+                                        Cabelo no Peito
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="shop-category-page-collum template-d">
+
+                                <div data-idpart="sobranchelhas" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Sobrancelha.png" alt="" srcset="">
+                                    <span>
+                                        Sobrancelhas
+                                    </span>
+                                </div>
+                              
+                                <div data-idpart="envelhecimento" class="shop-single-category novak-background-b novak-background-border-b shop-single-category-giant">
+                                    <img src="./assets/Envelhecimento.png" alt="" srcset="">
+                                    <span>
+                                        Envelhecimento
+                                    </span>
+                                </div>
+
+                                
+
+                            </div>
+                            <div class="shop-category-page-collum template-d">
+
+                                
+                                
+                                <div data-idpart="rugas" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Rugas.png" alt="" srcset="">
+                                    <span>
+                                        Rugas
+                                    </span>
+                                </div>
+                              
+                                
+
+                                <div data-idpart="batom" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Batoomm.png" alt="" srcset="">
+                                    <span>
+                                        Batom
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="shop-categorys-page" page="1">
+                            <div class="shop-category-page-collum template-e">
+
+                                <div data-idpart="sardas" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/Sardas.png" alt="" srcset="">
+                                    <span>
+                                        Sardas
+                                    </span>
+                                </div>
+                               
+                            </div>
+                            
+                            <div class="shop-category-page-collum template-d">
+                                
+                                <div data-idpart="defeitos" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/Velho.png" alt="" srcset="">
+                                    <span>
+                                        Defeitos
+                                    </span>
+                                </div>
+
+                                <div data-idpart="maquiagem" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Maquiagem.png" alt="" srcset="">
+                                    <span>
+                                        Maquiagem
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="shop-category-page-collum template-e">
+                                <div data-idpart="blush" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/Blush.png" alt="" srcset="">
+                                    <span>
+                                        Blush
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-products">
+                        <div class="shop-products-wrapper">
+
+                            <div class="shop-product-single novak-background-b novak-background-border-b">
+                                <img src="./assets/clothes/female/1/0.png" alt="" srcset="">
+                            </div>
+
+                 
+                        </div>
+                       
+
+                    </div>
+                    <div class="shop-scroll">
+                        <input id="barbershop_category_scroll" min="0" value="0" max="1" type="range" name="" id="">
+                    </div>
+                </div>
+                <div class="shop-buttons">
+                    <div class="shop-price-button novak-background">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <p>
+                            <span></span>
+                            <span class="barbershop-price-text">50,00</span>
+                        </p>
+                    </div>
+                    <div class="cam-container">
+                        <div class="cam-button novak-background" data-mode="rem">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <div class="cam-selected novak-background">
+                            <img src="./assets/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="cam-button novak-background" data-mode="add">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="return-button novak-background">
+                        <span class="material-symbols-outlined">
+                            undo
+                        </span>
+                        <p>VOLTAR</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="shop-interface-bottom">
+            <div class="shop-container">
+                <div class="shop-rotation-icon">
+                    <span class="material-symbols-outlined">
+                        360
+                    </span>
+                </div>
+                <div class="shop-rotation-infos">
+                    <span>
+                        ROTAÇÃO DO PERSONAGEM
+                    </span>
+                    <input class="rotate-input" min="0" max="360" type="range" name="" id="">
+                </div>
+                <div class="shop-rotation-icon">
+                    <span class="material-symbols-outlined">
+                        360
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tattooshop-interface interface" style="display: none;">
+        <div class="shop-interface-top">
+
+            <div class="shop-container">
+                <div class="shop-title">
+                    <div class="shop-text">
+                        CHAPÉUS
+                    </div>
+                </div>
+                <div class="shop-modal novak-background novak-background-border-a">
+                    <div class="shop-categorys" >
+                        <div class="shop-categorys-page" page="0" style="display: none;">
+                            <div class="shop-category-page-collum template-d">
+                                <div data-idpart="leftarm" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/TattooEsquerdo.png" alt="" srcset="">
+                                    <span>
+                                        Braço Esquerdo
+                                    </span>
+                                </div>
+                                <div data-idpart="leftleg" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/TattooPernE.png" alt="" srcset="">
+                                    <span>
+                                        Perna Esquerda
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-category-page-collum template-b">
+                                <div data-idpart="head" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/TattooCabeca.png" alt="" srcset="">
+                                    <span>
+                                       Cabeça
+                                    </span>
+                                </div>
+                              
+                                <div data-idpart="torso" class="shop-single-category novak-background-b novak-background-border-b shop-single-category-giant">
+                                    <img src="./assets/TattooPeito.png" alt="" srcset="">
+                                    <span>
+                                        Torso
+                                    </span>
+                                </div>
+
+                                <div data-idpart="overlay" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/Cabelo.png" alt="" srcset="">
+                                    <span>
+                                        Pigmentação
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-category-page-collum template-d">
+                                <div data-idpart="rightarm" class="shop-single-category novak-background-b novak-background-border-b">
+                                    <img src="./assets/TattooDireto.png " alt="" srcset="">
+                                    <span>
+                                        Braço Direito
+                                    </span>
+                                </div>
+                                
+                                <div data-idpart="rightleg" class="shop-single-category shop-single-category-normal novak-background-b novak-background-border-b">
+                                    <img src="./assets/TattooPernaD.png" alt="" srcset="">
+                                    <span>
+                                        Perna Direita
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-products" style="display: none;">
+                        <div class="shop-products-wrapper">
+
+                            <div class="shop-product-single novak-background-b novak-background-border-b">
+                                <img src="./assets/clothes/female/1/0.png" alt="" srcset="">
+                            </div>
+
+                 
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-buttons">
+                    <div class="shop-price-button novak-background">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <p>
+                            <span></span>
+                            <span class="tattooshop-price-text">50,00</span>
+                        </p>
+                    </div>
+                    <div class="cam-container">
+                        <div class="cam-button novak-background" data-mode="rem">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <div class="cam-selected novak-background">
+                            <img src="./assets/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="cam-button novak-background" data-mode="add">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="return-button novak-background">
+                        <span class="material-symbols-outlined">
+                            undo
+                        </span>
+                        <p>VOLTAR</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="shop-interface-bottom">
+            <div class="shop-container">
+                <div class="shop-rotation-icon">
+                    <span class="material-symbols-outlined">
+                        360
+                    </span>
+                </div>
+                <div class="shop-rotation-infos">
+                    <span>
+                        ROTAÇÃO DO PERSONAGEM
+                    </span>
+                    <input class="rotate-input" min="0" max="360" type="range" name="" id="">
+                </div>
+                <div class="shop-rotation-icon">
+                    <span class="material-symbols-outlined">
+                        360
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdt-interface interface" style="display: none;">
+        <div class="mdt-modal mapree-dev-background-a">
+            <div class="mdt-header mapree-dev-background-b">
+                <div class="mdt-header-brand">
+                    <img src="https://cdn.discordapp.com/attachments/762029984671072296/1031156742563835924/granjero_light.png"
+                        alt="" srcset="">
+                </div>
+                <div class="mdt-header-title">
+                    Tablet da policia
+                </div>
+                <div class="mdt-header-profile mdt-background-image" style="background-image: url(https://cdn.discordapp.com/attachments/762029984671072296/1031156742563835924/granjero_light.png);">
+                    <div class="mdt-header-profile-infos mapree-dev-background-b">
+                        <span>Mapree Dev</span>
+                        <div class="change-photo-button">
+                            MUDAR FOTO
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdt-body">
+                <section class="mdt-sidebar mapree-dev-background-b">
+                    <div class="mdt-line mapree-dev-background-a"></div>
+                    <div class="mdt-sidebar-item mapree-dev-background-b" data-page="home">
+                        HOME
+                    </div>
+                    <div class="mdt-sidebar-item mapree-dev-background-b" data-page="ficha">
+                        FICHA CRIMINAL
+                    </div>
+                    <div class="mdt-sidebar-item mapree-dev-background-b" data-page="punish">
+                        PRENDER / MULTAR
+                    </div>
+                    <div class="mdt-sidebar-item mapree-dev-background-b" data-page="emp">
+                        CONTRATAR
+                    </div>
+                </section>
+                <section class="mdt-content">
+
+                    <section class="mdt-content-home" style="display: none;">
+                        <div class="mdt-content-home-announcements mapree-dev-background-b mapree-dev-border-radius-a">
+                            <div class="mdt-announcements-title">
+                                Comunicados
+                            </div>
+
+                            <div class="mdt-announcements-content">
+
+                                <div class="mdt-announcements-single">
+                                    <div class="mdt-announcements-single-profile">
+
+                                    </div>
+                                    <div class="mdt-announcements-single-content">
+                                        <p>Name FirstName</p>
+                                        <span>
+                                            Mensagem
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mdt-announcements-send-announce mapree-dev-input mapree-dev-background-b">
+                                <input type="text" name="" id="">
+                                <div class="mapreedev-button mapree-dev-background-brand">
+                                    <span class="material-symbols-outlined">
+                                        send
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdt-content-home-offices mapree-dev-background-b mapree-dev-border-radius-a">
+                            <div class="mdt-offices-title">
+                                Oficiais
+                            </div>
+
+                            <div class="mapree-dev-input mapree-dev-background-b">
+                             
+                                <input type="text" name="" id="">
+                                <div class="mapreedev-button mapree-dev-background-brand">
+                                    <span class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="mdt-offices-list">
+
+                                <div class="mdt-offices-list-single mapree-dev-background-b">
+                                    <div class="mdt-single-office-image"></div>
+                                    <div class="mdt-single-office-content">
+                                        <div class="mdt-single-office-content-first">
+                                            <span>Name FirstName</span>
+                                            <span>Tenente</span>
+                                        </div>
+                                        <div class="mdt-single-office-content-second">
+                                            <div class="mdt-single-office-button mdt-single-button-upgrade">PROMOVER
+                                            </div>
+                                            <div class="mdt-single-office-button mdt-single-button-downgrade">REBAIXAR
+                                            </div>
+                                            <div class="mdt-single-office-button mdt-single-button-dimiss">DEMITIR</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="mdt-content-ficha" style="display: none;">
+                        <div class="mapree-dev-input mapree-dev-background-b">
+                            <div class="mapree-dev-label-input mapree-dev-background-brand">
+                                ID
+                            </div>
+                            <input type="number" name="" id="">
+                            <div class="mapreedev-button mapree-dev-background-brand">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mdt-ficha-list">
+                            <div class="mdt-single-ficha-list mapree-dev-background-b">
+                                <div class="mdt-single-ficha-first">
+                                    <div class="mdt-single-office-image"></div>
+                                    <div class="mdt-single-ficha-content">
+                                        <span class="mdt-single-ficha-name">Name FirstName</span>
+                                        <div class="mdt-single-ficha-status mdt-single-status-negative">
+                                            SUJA
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdt-single-ficha-second">
+                                    <div class="mdt-single-ficha-button mapree-dev-background-b">
+                                        VER FICHA
+                                    </div>
+                                    <div class="mdt-single-ficha-button mapree-dev-background-b">
+                                        VEICULOS
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mdt-content-punish" style="display: none;">
+
+                        <div class="mdt-content-punish-top">
+                           
+                         
+                            <div class="mapree-dev-input mapree-dev-background-b">
+                                <input type="text" name="" id="">
+                                <div class="mapreedev-button mapree-dev-background-brand">
+                                    <span class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdt-content-punish-body">
+
+                            <div class="mdt-content-punish-body-helper mapree-dev-background-b">
+                                <span spec="true">CRIME</span>
+                                <span>/</span>
+                                <span spec="true">PENA</span>
+                                <span>/</span>
+                                <span spec="true">MULTA</span>
+                                <span>/</span>
+                                <span spec="true"></span>
+                            </div>
+
+                            <div class="mdt-content-punish-body-crimes mapree-dev-background-b">
+
+                                <div class="mdt-punish-single-crime mapree-dev-background-b">
+                                    <span>GTA</span>
+                                    <span>20 MESES</span>
+                                    <span>R$ 20.000</span>
+                                    <span checkbox="true">
+                                        <input type="checkbox" name="" id="">
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mdt-content-punish-footer">
+                            <div class="mdt-content-punish-top-passport mapree-dev-input mapree-dev-background-b">
+                                <div class="mapree-dev-label-input mapree-dev-background-brand">
+                                    ID
+                                </div>
+                                <input type="number" name="" id="crime_id">
+                            </div>
+                            <div class="mdt-content-punish-bottom-pena mapree-dev-input mapree-dev-background-b">
+                                <div class="mapree-dev-label-input mapree-dev-background-brand">
+                                    PENA
+                                </div>
+                                <input type="text" name="" id="pena_total">
+                            </div>
+                            <div class="mdt-content-punish-bottom-multa mapree-dev-input mapree-dev-background-b">
+                                <div class="mapree-dev-label-input mapree-dev-background-brand">
+                                    MULTA
+                                </div>
+                                <input type="text" name="" id="multa_total">
+                            </div>
+                            <div id="crime_prender" class="mdt-content-punish-bottom-button mapree-dev-background-brand">
+                                PRENDER
+                            </div>
+
+                            <div id="crime_multar" class="mdt-content-punish-bottom-button mapree-dev-background-brand">
+                                MULTAR
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="mdt-content-emp" style="display: none;">
+
+                        <div class="mdt-content-emp-top">
+                            <div class="mapree-dev-input mapree-dev-background-b">
+                                <div class="mapree-dev-label-input mapree-dev-background-brand">
+                                    ID
+                                </div>
+                                <input type="text" name="" id="">
+                                <div class="mapreedev-button mapree-dev-background-brand">
+                                    <span class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdt-content-emp-body mapree-dev-background-b">
+
+                            <div class="mdt-content-emp-single mapree-dev-background-b">
+                                <div class="mdt-content-single-emp-profile">
+                                    <div class="mdt-emp-single-avatar"></div>
+                                    <div class="mdt-emp-single-infos">
+                                        <span>
+                                            Name FirstName
+                                        </span>
+                                        <span>
+                                            Não é um oficial
+                                        </span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mdt-content-single-emp-actions">
+                                    <div class="mdt-emp-single-button mapree-dev-background-brand">
+                                        CONTRATAR
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mdt-content-emp-single mapree-dev-background-b">
+                                <div class="mdt-content-single-emp-profile">
+                                    <div class="mdt-emp-single-avatar"></div>
+                                    <div class="mdt-emp-single-infos">
+                                        <span>
+                                            Name FirstName
+                                        </span>
+                                        <span>
+                                            Tenente
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="mdt-content-single-emp-actions already-employee">
+                                    <div class="mdt-emp-single-button mdt-emp-single-button-dimiss">
+                                        DEMITIR
+                                    </div>
+                                    <div class="mdt-emp-single-button mapree-dev-background-brand">
+                                        PROMOVER
+                                    </div>
+                                    <div class="mdt-emp-single-button mdt-emp-single-button-downgrade">
+                                        REBAIXAR
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                    </section>
+
+                    <div class="mdt-content-loader" style="display: none;">
+                        <div class="loader">
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="mdt-popup" style="display: none;">
+                <div class="mdt-popup-modal mapree-dev-background-a">
+                    <div class="mdt-popup-title" style="display: none;">
+                        Digite o url da sua foto de perfil
+                    </div>
+                    <div class="mdt-popup-content">
+
+                        <div class="mdt-popup-cnt-input mapree-dev-background-b" style="display: none;">
+                            <input type="text" name="" id="">
+                        </div>
+                        <!-- LIST -->
+                        <!-- <p>Prender mapree dev por 10 meses</p> -->
+                        <div class="mdt-popup-cnt-custom">
+
+                        </div>
+                        <div class="mdt-popup-cnt-list" style="display: none;">
+                            <div class="mdt-popup-cnt-list-car mapree-dev-background-b">
+                                <img src="http://167.114.223.179/fotos_premiumX/kuruma.png" alt="" srcset="">
+                                <div class="mdt-popup-list-car-infos">
+                                    <span>
+                                        Kuruma
+                                    </span>
+                                    <div class="mdt-popup-button mdt-popup-buttons-recuse">
+                                        DETER
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdt-popup-cnt-list-car mapree-dev-background-b">
+                                <img src="http://167.114.223.179/fotos_premiumX/kuruma.png" alt="" srcset="">
+                                <div class="mdt-popup-list-car-infos">
+                                    <span>
+                                        Kuruma
+                                    </span>
+                                    <div class="mdt-popup-button mdt-popup-buttons-recuse">
+                                        DETER
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdt-popup-buttons" style="display: none;">
+                        <button class="popup-mdt-can-close mdt-popup-button mdt-popup-buttons-recuse">
+                            RECUSAR
+                        </button>
+                        <button class="mdt-popup-button mdt-popup-buttons-confirm">
+                            ACEITAR
+                        </button>
+                    </div>
+                    
+                    <button class="popup-mdt-can-close mdt-popup-close-btn  mapree-dev-background-a">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
